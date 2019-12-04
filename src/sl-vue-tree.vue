@@ -29,6 +29,8 @@
             class="sl-vue-tree-node-item"
             @mousedown="onNodeMousedownHandler($event, node)"
             @mouseup="onNodeMouseupHandler($event, node)"
+            @mouseover="emitNodeMouseover($event, node)"
+            @mouseleave="emitNodeMouseleave($event, node)"
             @contextmenu="emitNodeContextmenu(node, $event)"
             @dblclick="emitNodeDblclick(node, $event)"
             @click="emitNodeClick(node, $event)"

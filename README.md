@@ -123,6 +123,8 @@ interface ICursorPosition<TDataType> {
 | drop            | draggingNodes: ISlTreeNode[], position: ICursorPosition, event: MouseEvent | triggers when dragging nodes have been dropped    |
 | nodeclick       | node: ISlTreeNode, event: MouseEvent                                       | handle `click` event on node                      |
 | nodedblclick    | node: ISlTreeNode, event: MouseEvent                                       | handle `dblclick` event on node                   |
+| nodemouseover   | node: ISlTreeNode, event: MouseEvent                                       | handle `mouseover` event on node                  |
+| nodemouseleave  | node: ISlTreeNode, event: MouseEvent                                       | handle `nodemouseleave` event on node             |
 | nodecontextmenu | node: ISlTreeNode, event: MouseEvent                                       | handle `contextmenu` event on node                |
 | externaldrop    | cursorPosition: ICursorPosition, event: MouseEvent                         | handle `drop` event for external items [demo](https://holiber.github.io/sl-vue-tree/demo/externaldrag)             |
 

@@ -222,7 +222,12 @@ export default {
     emitNodeClick(node, event) {
       this.getRoot().$emit('nodeclick', node, event);
     },
-
+    emitNodeMouseover(node, event) {
+      this.getRoot().$emit('nodemouseover', node, event);
+    },
+    emitNodeMouseleave(node, event) {
+      this.getRoot().$emit('nodemouseleave', node, event);
+    },
     emitNodeDblclick(node, event) {
       this.getRoot().$emit('nodedblclick', node, event);
     },
